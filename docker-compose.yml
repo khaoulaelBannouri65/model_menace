@@ -1,0 +1,9 @@
+services:
+  flask-app:
+    build: .
+    ports:
+      - "8000:8000"  # Remplacez 8000 par votre nouveau port
+    volumes:
+      - .:/app
+    environment:
+      FLASK_ENV: development
